@@ -4,9 +4,9 @@ import { MaterialIcons, FontAwesome, Ionicons } from "@expo/vector-icons";
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.BarraSuperior}>
-        <Text style={styles.BarraTexto}>18:46</Text>
-        <Text style={styles.BarraTexto2}>97% </Text>
+      <View style={styles.barraSuperior}>
+        <Text style={styles.barraTexto}>18:46</Text>
+        <Text style={styles.barraTexto2}>97% </Text>
         <MaterialIcons
           name="wifi"
           size={20}
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   //   color: "green",
   // },
 
-  BarraSuperior: {
+  barraSuperior: {
     /// marginBottom: 180,
     width: "100%",
     borderRadius: 5,
@@ -57,11 +57,11 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     flexDirection: "row",
   },
-  BarraTexto: {
+  barraTexto: {
     color: "white",
     left: 10,
   },
-  BarraTexto2: {
+  barraTexto2: {
     color: "white",
     position: "absolute",
     right: 15,
