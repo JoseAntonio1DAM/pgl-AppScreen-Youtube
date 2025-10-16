@@ -26,7 +26,9 @@ export default function App() {
           style={{ left: 320 }}
         />
       </View>
-      <Text>YOUTUBE</Text>
+      <View>
+        <Text>History</Text>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -63,5 +65,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     right: 15,
     top: 10,
+  },
+  TextoHistorial: {
+    color: "white",
   },
 });
