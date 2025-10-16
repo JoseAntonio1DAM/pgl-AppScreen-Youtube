@@ -67,4 +67,5 @@ const styles = StyleSheet.create({
     right: 15,
     top: 10,
   },
+  BarraSuperior2: {},
 });
