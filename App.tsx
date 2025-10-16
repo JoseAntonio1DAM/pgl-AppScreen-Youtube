@@ -26,6 +26,9 @@ export default function App() {
           style={{ left: 320 }}
         />
       </View>
+      <View>
+        <FontAwesome name="youtube" size={100} color="red" />
+      </View>
       <Text>YOUTUBE</Text>
       <StatusBar style="auto" />
     </View>
