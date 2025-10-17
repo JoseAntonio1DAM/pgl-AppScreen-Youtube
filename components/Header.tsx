@@ -24,9 +24,6 @@ const Header = () => {
           style={styles.icon}
         />
       </View>
-      <View style={styles.imageContainer}>
-        <Image source={require("../assets/ytshort.png")} style={styles.image} />
-      </View>
     </View>
   );
 };
@@ -51,16 +48,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-end", // Asegura que los iconos estén a la derecha
   },
-  imageContainer: {
-    marginTop: 10,
-    alignItems: "center",
-    width: "10%",
-    height: "100%",
-  },
-  image: {
-    width: 50,
-    height: 50,
-  },
+
   title: {
     marginLeft: 9, // Ajusta el espacio entre la flecha y "History"
     fontSize: 18,
