@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { MaterialIcons, FontAwesome, Ionicons } from "@expo/vector-icons";
 import Header from "./components/Header";
 import HeaderTwo from "./components/HeaderTwo";
+import ShortsList from "./components/ShortsList";
 
 export default function App() {
   return (
@@ -34,6 +35,9 @@ export default function App() {
       </View>
       <View>
         <HeaderTwo />
+      </View>
+      <View>
+        <ShortsList />
       </View>
     </View>
   );
