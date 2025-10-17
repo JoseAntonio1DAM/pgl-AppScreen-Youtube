@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { MaterialIcons, FontAwesome, Ionicons } from "@expo/vector-icons";
+import Header from "./components/Header";
 export default function App() {
   return (
     <View style={styles.container}>
@@ -27,10 +28,8 @@ export default function App() {
         />
       </View>
       <View>
-        <FontAwesome name="youtube" size={100} color="red" />
+        <Header />
       </View>
-      <Text>YOUTUBE</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
