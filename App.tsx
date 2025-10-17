@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { MaterialIcons, FontAwesome, Ionicons } from "@expo/vector-icons";
 import Header from "./components/Header";
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -27,7 +28,7 @@ export default function App() {
           style={{ left: 320 }}
         />
       </View>
-      <View>
+      <View style={styles.header}>
         <Header />
       </View>
     </View>
@@ -39,15 +40,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#3cac20ff",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start", // Cambiado para alinear los elementos al inicio
   },
 
-  // Text: {
-  //   color: "green",
-  // },
-
   barraSuperior: {
-    /// marginBottom: 180,
     width: "100%",
     borderRadius: 5,
     position: "absolute",
@@ -66,5 +62,7 @@ const styles = StyleSheet.create({
     right: 15,
     top: 10,
   },
-  BarraSuperior2: {},
+  header: {
+    marginTop: 100, // Espaciado para colocar el Header justo debajo de la barra superior
+  },
 });
